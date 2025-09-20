@@ -8,7 +8,7 @@ import { useEffect, useState } from "react";
 import { Input } from "@/components/input";
 import { Button } from "@/components/ui/button";
 import { toast } from "sonner";
-import { DeployButton, ProjectInfo } from "@/components/project-info";
+import { ProjectInfo } from "@/components/project-info";
 import { AISDKLogo } from "@/components/icons";
 import { PromptSuggestions } from "@/components/prompt-suggestions";
 import {
@@ -173,52 +173,14 @@ export default function Chat() {
       {/* Resizable Panels */}
       <div className="w-full hidden xl:block">
         <ResizablePanelGroup direction="horizontal" className="h-full">
-          {/* Desktop Stream Panel */}
-          <ResizablePanel
-            defaultSize={70}
-            minSize={40}
-            className="bg-black relative items-center justify-center"
-          >
-            {streamUrl ? (
-              <>
-                <iframe
-                  src={streamUrl}
-                  className="w-full h-full"
-                  style={{
-                    transformOrigin: "center",
-                    width: "100%",
-                    height: "100%",
-                  }}
-                  allow="autoplay"
-                />
-                <Button
-                  onClick={refreshDesktop}
-                  className="absolute top-2 right-2 bg-black/50 hover:bg-black/70 text-white px-3 py-1 rounded text-sm z-10"
-                  disabled={isInitializing}
-                >
-                  {isInitializing ? "Creating desktop..." : "New desktop"}
-                </Button>
-              </>
-            ) : (
-              <div className="flex items-center justify-center h-full text-white">
-                {isInitializing
-                  ? "Initializing desktop..."
-                  : "Loading stream..."}
-              </div>
-            )}
-          </ResizablePanel>
-
-          <ResizableHandle withHandle />
-
           {/* Chat Interface Panel */}
           <ResizablePanel
             defaultSize={30}
             minSize={25}
-            className="flex flex-col border-l border-zinc-200"
+            className="flex flex-col border-r border-zinc-200"
           >
             <div className="bg-white py-4 px-4 flex justify-between items-center">
               <AISDKLogo />
-              <DeployButton />
             </div>
 
             <div
@@ -259,6 +221,43 @@ export default function Chat() {
               </form>
             </div>
           </ResizablePanel>
+
+          <ResizableHandle withHandle />
+
+          {/* Desktop Stream Panel */}
+          <ResizablePanel
+            defaultSize={70}
+            minSize={40}
+            className="bg-black relative items-center justify-center"
+          >
+            {streamUrl ? (
+              <>
+                <iframe
+                  src={streamUrl}
+                  className="w-full h-full"
+                  style={{
+                    transformOrigin: "center",
+                    width: "100%",
+                    height: "100%",
+                  }}
+                  allow="autoplay"
+                />
+                <Button
+                  onClick={refreshDesktop}
+                  className="absolute top-2 right-2 bg-black/50 hover:bg-black/70 text-white px-3 py-1 rounded text-sm z-10"
+                  disabled={isInitializing}
+                >
+                  {isInitializing ? "Creating desktop..." : "New desktop"}
+                </Button>
+              </>
+            ) : (
+              <div className="flex items-center justify-center h-full text-white">
+                {isInitializing
+                  ? "Initializing desktop..."
+                  : "Loading stream..."}
+              </div>
+            )}
+          </ResizablePanel>
         </ResizablePanelGroup>
       </div>
 
@@ -266,7 +265,6 @@ export default function Chat() {
       <div className="w-full xl:hidden flex flex-col">
         <div className="bg-white py-4 px-4 flex justify-between items-center">
           <AISDKLogo />
-          <DeployButton />
         </div>
 
         <div
