@@ -1,54 +1,39 @@
 {
   "node": {
-    "7f4d04d36ecf01e2610c60d68019cebaae0134ef35": {
+    "7f9fa69520672494ecedcbec87333b993111602b5e": {
       "workers": {
         "app/page": {
-          "moduleId": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2Fhome%2Frunner%2Fworkspace%2Flib%2Fe2b%2Futils.ts%22%2C%5B%7B%22id%22%3A%227f4d04d36ecf01e2610c60d68019cebaae0134ef35%22%2C%22exportedName%22%3A%22getDesktop%22%7D%2C%7B%22id%22%3A%227f5bb307e25e82f679a2155dffca14297038533d64%22%2C%22exportedName%22%3A%22killDesktop%22%7D%2C%7B%22id%22%3A%227fb4066523285ef5873a73aaee7d6a1df87254b6aa%22%2C%22exportedName%22%3A%22getDesktopURL%22%7D%5D%5D%5D&__client_imported__=true!",
-          "async": false
-        },
-        "app/api/kill-desktop/route": {
-          "moduleId": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2Fhome%2Frunner%2Fworkspace%2Flib%2Fe2b%2Futils.ts%22%2C%5B%7B%22id%22%3A%227f4d04d36ecf01e2610c60d68019cebaae0134ef35%22%2C%22exportedName%22%3A%22getDesktop%22%7D%2C%7B%22id%22%3A%227f5bb307e25e82f679a2155dffca14297038533d64%22%2C%22exportedName%22%3A%22killDesktop%22%7D%2C%7B%22id%22%3A%227fb4066523285ef5873a73aaee7d6a1df87254b6aa%22%2C%22exportedName%22%3A%22getDesktopURL%22%7D%5D%5D%5D&__client_imported__=!",
+          "moduleId": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2Fhome%2Frunner%2Fworkspace%2Flib%2Fe2b%2Futils.ts%22%2C%5B%7B%22id%22%3A%227f9fa69520672494ecedcbec87333b993111602b5e%22%2C%22exportedName%22%3A%22killDesktop%22%7D%2C%7B%22id%22%3A%227fa522f497fbbae0bda0c9c195f316084b4039fbd2%22%2C%22exportedName%22%3A%22getDesktop%22%7D%2C%7B%22id%22%3A%227fc6ef015f2dcccf22cdc48be44a572c4d7fe5d028%22%2C%22exportedName%22%3A%22getDesktopURL%22%7D%5D%5D%5D&__client_imported__=true!",
           "async": false
         }
       },
       "layer": {
-        "app/page": "action-browser",
-        "app/api/kill-desktop/route": "rsc"
+        "app/page": "action-browser"
       }
     },
-    "7f5bb307e25e82f679a2155dffca14297038533d64": {
+    "7fa522f497fbbae0bda0c9c195f316084b4039fbd2": {
       "workers": {
         "app/page": {
-          "moduleId": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2Fhome%2Frunner%2Fworkspace%2Flib%2Fe2b%2Futils.ts%22%2C%5B%7B%22id%22%3A%227f4d04d36ecf01e2610c60d68019cebaae0134ef35%22%2C%22exportedName%22%3A%22getDesktop%22%7D%2C%7B%22id%22%3A%227f5bb307e25e82f679a2155dffca14297038533d64%22%2C%22exportedName%22%3A%22killDesktop%22%7D%2C%7B%22id%22%3A%227fb4066523285ef5873a73aaee7d6a1df87254b6aa%22%2C%22exportedName%22%3A%22getDesktopURL%22%7D%5D%5D%5D&__client_imported__=true!",
-          "async": false
-        },
-        "app/api/kill-desktop/route": {
-          "moduleId": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2Fhome%2Frunner%2Fworkspace%2Flib%2Fe2b%2Futils.ts%22%2C%5B%7B%22id%22%3A%227f4d04d36ecf01e2610c60d68019cebaae0134ef35%22%2C%22exportedName%22%3A%22getDesktop%22%7D%2C%7B%22id%22%3A%227f5bb307e25e82f679a2155dffca14297038533d64%22%2C%22exportedName%22%3A%22killDesktop%22%7D%2C%7B%22id%22%3A%227fb4066523285ef5873a73aaee7d6a1df87254b6aa%22%2C%22exportedName%22%3A%22getDesktopURL%22%7D%5D%5D%5D&__client_imported__=!",
+          "moduleId": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2Fhome%2Frunner%2Fworkspace%2Flib%2Fe2b%2Futils.ts%22%2C%5B%7B%22id%22%3A%227f9fa69520672494ecedcbec87333b993111602b5e%22%2C%22exportedName%22%3A%22killDesktop%22%7D%2C%7B%22id%22%3A%227fa522f497fbbae0bda0c9c195f316084b4039fbd2%22%2C%22exportedName%22%3A%22getDesktop%22%7D%2C%7B%22id%22%3A%227fc6ef015f2dcccf22cdc48be44a572c4d7fe5d028%22%2C%22exportedName%22%3A%22getDesktopURL%22%7D%5D%5D%5D&__client_imported__=true!",
           "async": false
         }
       },
       "layer": {
-        "app/page": "action-browser",
-        "app/api/kill-desktop/route": "rsc"
+        "app/page": "action-browser"
       }
     },
-    "7fb4066523285ef5873a73aaee7d6a1df87254b6aa": {
+    "7fc6ef015f2dcccf22cdc48be44a572c4d7fe5d028": {
       "workers": {
         "app/page": {
-          "moduleId": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2Fhome%2Frunner%2Fworkspace%2Flib%2Fe2b%2Futils.ts%22%2C%5B%7B%22id%22%3A%227f4d04d36ecf01e2610c60d68019cebaae0134ef35%22%2C%22exportedName%22%3A%22getDesktop%22%7D%2C%7B%22id%22%3A%227f5bb307e25e82f679a2155dffca14297038533d64%22%2C%22exportedName%22%3A%22killDesktop%22%7D%2C%7B%22id%22%3A%227fb4066523285ef5873a73aaee7d6a1df87254b6aa%22%2C%22exportedName%22%3A%22getDesktopURL%22%7D%5D%5D%5D&__client_imported__=true!",
-          "async": false
-        },
-        "app/api/kill-desktop/route": {
-          "moduleId": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2Fhome%2Frunner%2Fworkspace%2Flib%2Fe2b%2Futils.ts%22%2C%5B%7B%22id%22%3A%227f4d04d36ecf01e2610c60d68019cebaae0134ef35%22%2C%22exportedName%22%3A%22getDesktop%22%7D%2C%7B%22id%22%3A%227f5bb307e25e82f679a2155dffca14297038533d64%22%2C%22exportedName%22%3A%22killDesktop%22%7D%2C%7B%22id%22%3A%227fb4066523285ef5873a73aaee7d6a1df87254b6aa%22%2C%22exportedName%22%3A%22getDesktopURL%22%7D%5D%5D%5D&__client_imported__=!",
+          "moduleId": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2Fhome%2Frunner%2Fworkspace%2Flib%2Fe2b%2Futils.ts%22%2C%5B%7B%22id%22%3A%227f9fa69520672494ecedcbec87333b993111602b5e%22%2C%22exportedName%22%3A%22killDesktop%22%7D%2C%7B%22id%22%3A%227fa522f497fbbae0bda0c9c195f316084b4039fbd2%22%2C%22exportedName%22%3A%22getDesktop%22%7D%2C%7B%22id%22%3A%227fc6ef015f2dcccf22cdc48be44a572c4d7fe5d028%22%2C%22exportedName%22%3A%22getDesktopURL%22%7D%5D%5D%5D&__client_imported__=true!",
           "async": false
         }
       },
       "layer": {
-        "app/page": "action-browser",
-        "app/api/kill-desktop/route": "rsc"
+        "app/page": "action-browser"
       }
     }
   },
   "edge": {},
-  "encryptionKey": "aAjdM/ei6GaVxPgDma8+ac5xoBcC1SeiE9NzREs8kfc="
+  "encryptionKey": "z22yGAzID+eFqi5af+rcYjWMB9E4L8jz0Q7GEBmQ5kY="
 }
