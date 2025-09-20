@@ -775,6 +775,9 @@
   .duration-200 {
     animation-duration: 200ms;
   }
+  .running {
+    animation-play-state: running;
+  }
   .group-hover\:opacity-70 {
     &:is(:where(.group):hover *) {
       @media (hover: hover) {
