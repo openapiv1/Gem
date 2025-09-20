@@ -12,7 +12,7 @@ export async function POST(req: Request) {
     await req.json();
   try {
     const result = streamText({
-      model: anthropic("claude-3-5-haiku-20241022"), // Using Sonnet for computer use
+      model: anthropic("claude-sonnet-4-20250514"), // Using Sonnet for computer use
       system:
         "Nazywasz się Claude i jesteś pomocnym asystentem z dostępem do komputera. " +
 "Użyj narzędzia komputerowego, aby pomóc użytkownikowi w jego prośbach. " +

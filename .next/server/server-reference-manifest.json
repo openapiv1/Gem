@@ -9,11 +9,16 @@
         "app/api/chat/route": {
           "moduleId": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2Fhome%2Frunner%2Fworkspace%2Flib%2Fe2b%2Futils.ts%22%2C%5B%7B%22id%22%3A%227f919e23d2bce3fbb803dc69a8aa644c27abf35694%22%2C%22exportedName%22%3A%22getDesktop%22%7D%2C%7B%22id%22%3A%227fdb3beaaf387ccd266c9e02a125eb298fc276e971%22%2C%22exportedName%22%3A%22killDesktop%22%7D%2C%7B%22id%22%3A%227fee3119e2f0cd64ec476700d7fc38447543ee0c5d%22%2C%22exportedName%22%3A%22getDesktopURL%22%7D%5D%5D%5D&__client_imported__=!",
           "async": false
+        },
+        "app/api/kill-desktop/route": {
+          "moduleId": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2Fhome%2Frunner%2Fworkspace%2Flib%2Fe2b%2Futils.ts%22%2C%5B%7B%22id%22%3A%227f919e23d2bce3fbb803dc69a8aa644c27abf35694%22%2C%22exportedName%22%3A%22getDesktop%22%7D%2C%7B%22id%22%3A%227fdb3beaaf387ccd266c9e02a125eb298fc276e971%22%2C%22exportedName%22%3A%22killDesktop%22%7D%2C%7B%22id%22%3A%227fee3119e2f0cd64ec476700d7fc38447543ee0c5d%22%2C%22exportedName%22%3A%22getDesktopURL%22%7D%5D%5D%5D&__client_imported__=!",
+          "async": false
         }
       },
       "layer": {
         "app/page": "action-browser",
-        "app/api/chat/route": "rsc"
+        "app/api/chat/route": "rsc",
+        "app/api/kill-desktop/route": "rsc"
       }
     },
     "7fdb3beaaf387ccd266c9e02a125eb298fc276e971": {
@@ -25,11 +30,16 @@
         "app/api/chat/route": {
           "moduleId": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2Fhome%2Frunner%2Fworkspace%2Flib%2Fe2b%2Futils.ts%22%2C%5B%7B%22id%22%3A%227f919e23d2bce3fbb803dc69a8aa644c27abf35694%22%2C%22exportedName%22%3A%22getDesktop%22%7D%2C%7B%22id%22%3A%227fdb3beaaf387ccd266c9e02a125eb298fc276e971%22%2C%22exportedName%22%3A%22killDesktop%22%7D%2C%7B%22id%22%3A%227fee3119e2f0cd64ec476700d7fc38447543ee0c5d%22%2C%22exportedName%22%3A%22getDesktopURL%22%7D%5D%5D%5D&__client_imported__=!",
           "async": false
+        },
+        "app/api/kill-desktop/route": {
+          "moduleId": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2Fhome%2Frunner%2Fworkspace%2Flib%2Fe2b%2Futils.ts%22%2C%5B%7B%22id%22%3A%227f919e23d2bce3fbb803dc69a8aa644c27abf35694%22%2C%22exportedName%22%3A%22getDesktop%22%7D%2C%7B%22id%22%3A%227fdb3beaaf387ccd266c9e02a125eb298fc276e971%22%2C%22exportedName%22%3A%22killDesktop%22%7D%2C%7B%22id%22%3A%227fee3119e2f0cd64ec476700d7fc38447543ee0c5d%22%2C%22exportedName%22%3A%22getDesktopURL%22%7D%5D%5D%5D&__client_imported__=!",
+          "async": false
         }
       },
       "layer": {
         "app/page": "action-browser",
-        "app/api/chat/route": "rsc"
+        "app/api/chat/route": "rsc",
+        "app/api/kill-desktop/route": "rsc"
       }
     },
     "7fee3119e2f0cd64ec476700d7fc38447543ee0c5d": {
@@ -41,11 +51,16 @@
         "app/api/chat/route": {
           "moduleId": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2Fhome%2Frunner%2Fworkspace%2Flib%2Fe2b%2Futils.ts%22%2C%5B%7B%22id%22%3A%227f919e23d2bce3fbb803dc69a8aa644c27abf35694%22%2C%22exportedName%22%3A%22getDesktop%22%7D%2C%7B%22id%22%3A%227fdb3beaaf387ccd266c9e02a125eb298fc276e971%22%2C%22exportedName%22%3A%22killDesktop%22%7D%2C%7B%22id%22%3A%227fee3119e2f0cd64ec476700d7fc38447543ee0c5d%22%2C%22exportedName%22%3A%22getDesktopURL%22%7D%5D%5D%5D&__client_imported__=!",
           "async": false
+        },
+        "app/api/kill-desktop/route": {
+          "moduleId": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2Fhome%2Frunner%2Fworkspace%2Flib%2Fe2b%2Futils.ts%22%2C%5B%7B%22id%22%3A%227f919e23d2bce3fbb803dc69a8aa644c27abf35694%22%2C%22exportedName%22%3A%22getDesktop%22%7D%2C%7B%22id%22%3A%227fdb3beaaf387ccd266c9e02a125eb298fc276e971%22%2C%22exportedName%22%3A%22killDesktop%22%7D%2C%7B%22id%22%3A%227fee3119e2f0cd64ec476700d7fc38447543ee0c5d%22%2C%22exportedName%22%3A%22getDesktopURL%22%7D%5D%5D%5D&__client_imported__=!",
+          "async": false
         }
       },
       "layer": {
         "app/page": "action-browser",
-        "app/api/chat/route": "rsc"
+        "app/api/chat/route": "rsc",
+        "app/api/kill-desktop/route": "rsc"
       }
     }
   },
