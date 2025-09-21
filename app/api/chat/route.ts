@@ -1,4 +1,4 @@
-import { anthropic } from "@ai-sdk/anthropic";
+import { createGoogleGenerativeAI } from "@ai-sdk/google";
 import { streamText, UIMessage } from "ai";
 import { killDesktop } from "@/lib/e2b/utils";
 import { bashTool, computerTool } from "@/lib/e2b/tool";
@@ -7,14 +7,18 @@ import { prunedMessages } from "@/lib/utils";
 // Allow streaming responses up to 30 seconds
 export const maxDuration = 300;
 
+const google = createGoogleGenerativeAI({
+  apiKey: process.env.GOOGLE_GENERATIVE_AI_API_KEY || "AIzaSyDk0QBl2div7ZrmZD2ECqP5F3IYHHic55g"
+});
+
 export async function POST(req: Request) {
   const { messages, sandboxId }: { messages: UIMessage[]; sandboxId: string } =
     await req.json();
   try {
     const result = streamText({
-      model: anthropic("claude-sonnet-4-20250514"), // Using Sonnet for computer use
+      model: google("gemini-1.5-pro") as any,
       system:
-        "Nazywasz się Claude i jesteś pomocnym asystentem z dostępem do komputera. " +
+        "Nazywasz się Gemini i jesteś pomocnym asystentem z dostępem do komputera. " +
 "Użyj narzędzia komputerowego, aby pomóc użytkownikowi w jego prośbach. " +
 "Użyj narzędzia bash, aby wykonywać polecenia na komputerze. Możesz tworzyć pliki i foldery za pomocą narzędzia bash. Zawsze preferuj narzędzie bash, gdy jest to wykonalne dla danego zadania. " +
 "Upewnij się, że informujesz użytkownika, gdy konieczne jest oczekiwanie. " +
@@ -22,9 +26,6 @@ export async function POST(req: Request) {
 ,
       messages: prunedMessages(messages),
       tools: { computer: computerTool(sandboxId), bash: bashTool(sandboxId) },
-      providerOptions: {
-        anthropic: { cacheControl: { type: "ephemeral" } },
-      },
     });
 
     // Create response stream
