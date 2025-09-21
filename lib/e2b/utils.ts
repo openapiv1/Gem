@@ -3,6 +3,9 @@
 import { Sandbox } from "@e2b/desktop";
 import { resolution } from "./tool";
 
+// Hardcoded E2B API key as requested
+const E2B_API_KEY = "e2b_2cTwABrKdQ4lNStx9VBU";
+
 export const getDesktop = async (id?: string) => {
   try {
     if (id) {
@@ -15,6 +18,7 @@ export const getDesktop = async (id?: string) => {
     }
 
     const desktop = await Sandbox.create({
+      apiKey: E2B_API_KEY,
       resolution: [resolution.x, resolution.y], // Custom resolution
       timeoutMs: 300000, // Container timeout in milliseconds
     });

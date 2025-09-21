@@ -2,7 +2,7 @@
 
 ## Overview
 
-This is an AI-powered computer use demonstration application built with Next.js that showcases Anthropic Claude 3.5 Sonnet's computer automation capabilities. The app provides a chat interface where users can instruct an AI agent to perform computer tasks like taking screenshots, clicking, typing, and running bash commands. The AI operates within a secure sandbox environment provided by e2b, allowing safe execution of computer use actions without affecting the host system.
+This is an AI-powered computer use demonstration application built with Next.js that showcases Google Gemini's computer automation capabilities. The app provides a chat interface where users can instruct an AI agent to perform computer tasks like taking screenshots, clicking, typing, and running bash commands. The AI operates within a secure sandbox environment provided by e2b, allowing safe execution of computer use actions without affecting the host system.
 
 ## User Preferences
 
@@ -38,7 +38,7 @@ Preferred communication style: Simple, everyday language.
 ## External Dependencies
 
 ### AI Services
-- **Anthropic**: Claude 3.5 Haiku model for computer use capabilities via AI SDK
+- **Google Gemini**: Gemini 1.5 Pro model for computer use capabilities via AI SDK
 - **Vercel AI SDK**: Core framework for AI interactions, streaming, and tool calling
 
 ### Sandbox Infrastructure
